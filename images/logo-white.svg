@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="300" height="175">
+  <defs>
+    <!-- Blue Gradient for M -->
+    <linearGradient id="blueGradW" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00C3FF"/>
+      <stop offset="100%" stop-color="#0077FF"/>
+    </linearGradient>
+
+    <!-- White/Light Gradient for S -->
+    <linearGradient id="lightGradS" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+
+    <!-- Swoosh Gradient -->
+    <linearGradient id="swooshGradW" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0077FF"/>
+      <stop offset="50%" stop-color="#00C3FF"/>
+      <stop offset="100%" stop-color="#00E5FF"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(40, 20)">
+    <!-- Dynamic Curved Swoosh Underneath -->
+    <path d="M 30 180 C 70 210, 200 220, 360 110 C 400 85, 450 45, 480 40 C 420 50, 350 100, 240 145 C 150 180, 70 180, 30 180 Z" fill="url(#swooshGradW)"/>
+
+    <!-- Letter M -->
+    <path d="M 80 60 L 130 60 L 175 140 L 220 60 L 270 60 L 270 200 L 225 200 L 225 110 L 175 190 L 125 110 L 125 200 L 80 200 Z" fill="url(#blueGradW)"/>
+
+    <!-- Letter S -->
+    <path d="M 285 130 C 285 80, 340 70, 420 70 L 440 70 L 415 105 L 390 105 C 345 105, 330 115, 330 130 C 330 148, 350 152, 400 162 C 455 173, 470 190, 470 220 C 470 270, 410 275, 330 275 L 225 275 L 265 240 L 335 240 C 390 240, 420 235, 420 215 C 420 195, 395 190, 350 180 C 300 168, 285 152, 285 130 Z" fill="url(#lightGradS)"/>
+
+    <!-- Digital Pixel Blocks -->
+    <rect x="440" y="48" width="12" height="12" fill="#00E5FF" rx="1"/>
+    <rect x="456" y="48" width="12" height="12" fill="#0077FF" rx="1"/>
+    <rect x="456" y="32" width="12" height="12" fill="#00E5FF" rx="1"/>
+    <rect x="472" y="32" width="12" height="12" fill="#CBD5E1" rx="1"/>
+    <rect x="472" y="16" width="12" height="12" fill="#FFFFFF" rx="1"/>
+
+    <!-- Text: SOLUTIONS -->
+    <text x="260" y="320" font-family="'Lexend', 'Segoe UI', 'Arial Black', sans-serif" font-weight="900" font-size="40" fill="#FFFFFF" letter-spacing="12" text-anchor="middle">SOLUTIONS</text>
+
+    <!-- Tagline: INNOVATE • SOLVE • SUCCEED -->
+    <line x1="40" y1="345" x2="100" y2="345" stroke="#00C3FF" stroke-width="2"/>
+    <text x="260" y="350" font-family="'Lexend', 'Segoe UI', sans-serif" font-weight="600" font-size="14" fill="#00C3FF" letter-spacing="4" text-anchor="middle">INNOVATE  •  SOLVE  •  SUCCEED</text>
+    <line x1="420" y1="345" x2="480" y2="345" stroke="#00C3FF" stroke-width="2"/>
+  </g>
+</svg>
