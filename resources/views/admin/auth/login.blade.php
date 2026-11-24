@@ -4,6 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Login – MS Solutions</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="{{ asset('images/logo.svg') }}?v=1">
+    <link rel="icon" type="image/png" sizes="64x64" href="{{ asset('images/favicon.png') }}?v=1">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}?v=1">
+    <link rel="apple-touch-icon" href="{{ asset('images/logo.svg') }}?v=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">

@@ -6,6 +6,12 @@
     <title>@yield('title', 'Admin Panel') – MS Solutions</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="{{ asset('images/logo.svg') }}?v=1">
+    <link rel="icon" type="image/png" sizes="64x64" href="{{ asset('images/favicon.png') }}?v=1">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}?v=1">
+    <link rel="apple-touch-icon" href="{{ asset('images/logo.svg') }}?v=1">
+
     <!-- Google Fonts & FontAwesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
