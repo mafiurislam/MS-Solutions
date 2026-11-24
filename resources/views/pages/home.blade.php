@@ -37,6 +37,39 @@
         </div>
     </section>
 
+    <!-- Recent Work Portfolio Showcase (Moved right after Banner) -->
+    <section class="projects-section-home3" style="padding-top: 60px;">
+        <div class="auto-container">
+            <div class="sec-title text-center">
+                <span class="sub-title">{{ $portfolioSec->badge ?? 'OUR PORTFOLIO' }}</span>
+                <h2>{{ $portfolioSec->title ?? 'Our Recent Work' }}</h2>
+                @if($portfolioSec && $portfolioSec->subtitle)
+                    <p class="text-muted">{{ $portfolioSec->subtitle }}</p>
+                @endif
+            </div>
+            <div class="row g-4">
+                @forelse($portfolios as $portfolio)
+                    <div class="col-lg-4 col-md-6">
+                        <a href="{{ $portfolio->project_url ?? '#' }}" target="_blank" rel="noopener noreferrer" class="project-block-home3">
+                            <img src="{{ $portfolio->image_url }}" alt="{{ $portfolio->title }}">
+                            <div class="caption-box">
+                                <h4>{{ $portfolio->title }}</h4>
+                                <span class="visit-btn">Visit Site <i class="fa fa-external-link-alt"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                @empty
+                    <div class="col-12 text-center text-muted">
+                        <p>No portfolios available yet.</p>
+                    </div>
+                @endforelse
+            </div>
+            <div class="text-center mt-5">
+                <a href="{{ route('portfolios') }}" class="theme-btn btn-style-one">View All Portfolios <i class="fa fa-arrow-right ms-2"></i></a>
+            </div>
+        </div>
+    </section>
+
     <!-- 5 Core Feature Blocks -->
     <section class="services-section-home3">
         <div class="auto-container">
@@ -100,7 +133,7 @@
                     <div class="sec-title">
                         <span class="sub-title">{{ $about->badge ?? 'Get to Know Us' }}</span>
                         <h2>{{ $about->title ?? 'We Are MS Solutions – Your Digital Partner' }}</h2>
-                        <p class="text-muted">{{ $about->subtitle ?? 'MS Solutions is a premier digital agency specializing in website development, digital marketing, and modern web design.' }}</p>
+                        <p class="text-muted">{{ $about->subtitle ?? 'MS Solutions is a premier digital agency specializing in website development, digital marketing, and modern web design. We help businesses establish a powerful online presence with innovative technology and dedicated support.' }}</p>
                     </div>
                     <div class="about-info-box">
                         <div class="icon"><i class="{{ $about->extra_data['feature_1_icon'] ?? 'fa fa-chart-pie' }}"></i></div>
@@ -228,39 +261,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Recent Work Portfolio Showcase -->
-    <section class="projects-section-home3">
-        <div class="auto-container">
-            <div class="sec-title text-center">
-                <span class="sub-title">{{ $portfolioSec->badge ?? 'OUR PORTFOLIO' }}</span>
-                <h2>{{ $portfolioSec->title ?? 'Our Recent Work' }}</h2>
-                @if($portfolioSec && $portfolioSec->subtitle)
-                    <p class="text-muted">{{ $portfolioSec->subtitle }}</p>
-                @endif
-            </div>
-            <div class="row g-4">
-                @forelse($portfolios as $portfolio)
-                    <div class="col-lg-4 col-md-6">
-                        <a href="{{ $portfolio->project_url ?? '#' }}" target="_blank" rel="noopener noreferrer" class="project-block-home3">
-                            <img src="{{ $portfolio->image_url }}" alt="{{ $portfolio->title }}">
-                            <div class="caption-box">
-                                <h4>{{ $portfolio->title }}</h4>
-                                <span class="visit-btn">Visit Site <i class="fa fa-external-link-alt"></i></span>
-                            </div>
-                        </a>
-                    </div>
-                @empty
-                    <div class="col-12 text-center text-muted">
-                        <p>No portfolios available yet.</p>
-                    </div>
-                @endforelse
-            </div>
-            <div class="text-center mt-5">
-                <a href="{{ route('portfolios') }}" class="theme-btn btn-style-one">View All Portfolios <i class="fa fa-arrow-right ms-2"></i></a>
             </div>
         </div>
     </section>

@@ -115,6 +115,16 @@ class DatabaseSeeder extends Seeder
                 ],
                 'order' => 1,
             ],
+            // HOME: Portfolio (Immediately after Hero)
+            [
+                'page' => 'home',
+                'section_key' => 'home_portfolio',
+                'section_name' => 'Recent Portfolio Showcase',
+                'badge' => 'OUR PORTFOLIO',
+                'title' => 'Our Recent Work',
+                'subtitle' => 'Take a look at custom web applications, e-commerce stores, and digital campaigns we have delivered.',
+                'order' => 2,
+            ],
             // HOME: 5 Core Feature Blocks
             [
                 'page' => 'home',
@@ -132,7 +142,7 @@ class DatabaseSeeder extends Seeder
                         ['icon' => 'fa fa-chart-line', 'title' => 'Data Analysis', 'text' => 'Actionable business intelligence and performance data.'],
                     ]
                 ],
-                'order' => 2,
+                'order' => 3,
             ],
             // HOME: About Us
             [
@@ -153,7 +163,7 @@ class DatabaseSeeder extends Seeder
                     'feature_2_title' => 'Expert Development Team',
                     'feature_2_desc' => 'Custom web applications engineered for high performance, security, and scalability.',
                 ],
-                'order' => 3,
+                'order' => 4,
             ],
             // HOME: Tech Tabs
             [
@@ -163,16 +173,6 @@ class DatabaseSeeder extends Seeder
                 'badge' => 'TECHNICAL EXPERTISE',
                 'title' => 'Our Specialized Expertise & Technology Stack',
                 'subtitle' => 'Explore our core service domains and the modern technologies we leverage to drive your digital growth.',
-                'order' => 4,
-            ],
-            // HOME: Portfolio
-            [
-                'page' => 'home',
-                'section_key' => 'home_portfolio',
-                'section_name' => 'Recent Portfolio Showcase',
-                'badge' => 'OUR PORTFOLIO',
-                'title' => 'Our Recent Work',
-                'subtitle' => 'Take a look at custom web applications, e-commerce stores, and digital campaigns we have delivered.',
                 'order' => 5,
             ],
             // HOME: Contact Section
